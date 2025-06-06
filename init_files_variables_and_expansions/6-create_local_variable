@@ -1,2 +1,5 @@
 #!/bin/bash
-BETTY="Holberton"
+function local_var {
+  local BEST="School"
+}
+local_var
