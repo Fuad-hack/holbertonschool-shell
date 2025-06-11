@@ -7,11 +7,7 @@ do
     if [ $COUNTER = 4 ]
     then
         echo "bad luck"
-    else
-        echo "Best School"
-    fi
-    if [ $COUNTER = 8 ]
-    then
+    elif [ $COUNTER = 8 ]
         echo "good luck"
     else
         echo "Best School"
