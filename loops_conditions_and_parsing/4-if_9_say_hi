@@ -4,10 +4,9 @@
 a=1
 while [ "$a" -le 10 ]
 do
+echo "Best School"
 	if [$a -eq 9] then
 		echo "Hi"
-		break
-	fi 
-	echo "Best School"
+	fi
 	a=$((a + 1))
 done
