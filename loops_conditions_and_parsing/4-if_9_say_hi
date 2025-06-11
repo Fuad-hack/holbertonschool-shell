@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
-#if_9_say_hi
+# displays Best School 10 times.
 
-a=1
-while [ "$a" -le 10 ]
+COUNTER=0
+while [ $COUNTER -lt 11 ]
 do
-	echo "Best School"
-	if ["$a"Æ-eq 9]; then
-		echo "Hi"
-	fi
-	a=$((a + 1))
+    if [ $COUNTER = 9 ]
+    then
+        echo "Hi"
+    else
+        echo "Best School"
+    fi
+    let COUNTER+=1
 done
