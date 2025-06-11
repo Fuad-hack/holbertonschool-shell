@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#if_9_say_hi
+
+a=1
+while [ "$a" -le 10 ]
+do
+	if [$a -eq 9] then
+		echo "Hi"
+		break
+	fi 
+	echo "Best School"
+	a=$((a + 1))
+done
