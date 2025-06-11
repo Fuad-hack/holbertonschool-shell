@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# Cari qovluqdakı faylları göstərir, yalnız "-" işarəsindən sonrakı hissəni
+
+for file in *; do
+    echo "$file" | cut -d '-' -f2-
+done
