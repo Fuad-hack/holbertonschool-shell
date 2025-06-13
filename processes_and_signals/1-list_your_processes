@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-# Bu skript hazırda işləyən bütün prosesləri, bütün istifadəçilər üçün, proses iyerarxiyası ilə göstərir
+# Bu skript haz
 
-ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,start,time,command --forest
+ps -auxf
