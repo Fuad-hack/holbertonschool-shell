@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Bu skript sonsuz dövrə ilə "To infinity and beyond" yazır və siqnal alanda dayanır
+
+echo $$ > /tmp/4.pid
 
 trap "echo 'Terminated'; exit" SIGTERM
 
