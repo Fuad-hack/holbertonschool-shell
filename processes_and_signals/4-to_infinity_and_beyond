@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
-# This script displays a statement indefinitely
-while true; do
+# Bu skript sonsuz dövrə ilə "To infinity and beyond" yazır və siqnal alanda dayanır
+
+trap "echo 'Terminated'; exit" SIGTERM
+
+while true
+do
     echo "To infinity and beyond"
-    sleep 2
+    sleep 1
 done
+
