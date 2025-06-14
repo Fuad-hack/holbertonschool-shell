@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
+# This is a script that displays to infinity and beyond indefinitely
 
-echo $$ > /tmp/4.pid
-
-trap "echo 'Terminated'; exit" SIGTERM
-
-while true
+for (( i=1; i>0; i++ ))
 do
-    echo "To infinity and beyond"
-    sleep 1
+	echo "To infinity and beyond"
+	sleep 2
 done
-
